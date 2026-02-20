@@ -6,7 +6,7 @@ use anchor_spl::token_interface::{
 };
 use solana_security_txt::security_txt;  // 👈 ADD THIS
 
-declare_id!("4bbnXrCnpxtMLHBcbLqwsGAfnB8jfzVtFHxv8bHwrqad");
+declare_id!("D5Ssp6VDvrZ7u6ccmM8UHggoBr8PxkkGZvijo4HbmPyX");
 
 // 👇 ADD SECURITY.TXT HERE (after declare_id, before the next use)
 security_txt! {
