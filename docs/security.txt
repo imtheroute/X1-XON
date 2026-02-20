@@ -1,0 +1,7 @@
+Contact: mailto:imtheroute@x1xon.xyz
+Project: X1 XON
+Project-URL: https://x1xon.xyz
+Source-Code: https://github.com/imtheroute/X1-XON
+Policy: https://github.com/imtheroute/X1-XON/security/policy
+Auditors: None
+Expires: 2027-01-01T00:00:00Z

@@ -1,0 +1,28 @@
+# Anchor / Solana
+.anchor/
+target/
+test-ledger/
+
+# Node
+node_modules/
+dist/
+.yarn/
+
+# OS
+.DS_Store
+
+# Env
+.env
+
+# Rust backups
+**/*.rs.bk
+
+# NEVER COMMIT KEYS
+**/*keypair*.json
+
+# Build artifacts
+*.so
+deploy/
+release/
+verifiable/
+solana-release-x86_64-unknown-linux-gnu.tar.bz2
