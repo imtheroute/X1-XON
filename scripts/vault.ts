@@ -1,7 +1,7 @@
 import { PublicKey } from "@solana/web3.js";
 
 const programId = new PublicKey(
-  "4bbnXrCnpxtMLHBcbLqwsGAfnB8jfzVtFHxv8bHwrqad"
+  "D5Ssp6VDvrZ7u6ccmM8UHggoBr8PxkkGZvijo4HbmPyX"
 );
 
 const [vaultAuthority] = PublicKey.findProgramAddressSync(
