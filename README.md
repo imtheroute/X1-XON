@@ -2,6 +2,10 @@
 
 Tap-to-claim community token on the X1 blockchain.
 
+## 📄 Whitepaper
+Official Whitepaper v1.0  
+https://github.com/imtheroute/X1-XON/blob/main/whitepaper.pdf
+
 ## Overview
 X1 XON is the XON token on the X1 blockchain. It is a tap-to-claim community token with a fixed supply and fully on-chain distribution.
 
