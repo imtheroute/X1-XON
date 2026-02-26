@@ -19,7 +19,8 @@ security_txt! {
     expiry: "2027-01-01T00:00:00.000Z"
 }
 
-use anchor_spl::associated_token::get_associated_token_address;
+use anchor_spl::associated_token::get_associated_token_address_with_program_id;
+use anchor_spl::token_2022::ID as TOKEN_2022_PROGRAM_ID;
 
 // 👇 PUT YOUR REAL XON TOKEN ADDRESS HERE
 pub const REAL_XON_MINT: Pubkey =
@@ -87,11 +88,13 @@ pub mod xon_time_mint {
         );
         // --- SECURITY FIX 3: VERIFY REAL VAULT ATA ---
 let real_vault_ata =
-    get_associated_token_address(
+    get_associated_token_address_with_program_id(
         &ctx.accounts.vault_authority.key(),
         &ctx.accounts.xon_mint.key(),
+        &TOKEN_2022_PROGRAM_ID,
     );
-
+msg!("Expected vault ATA: {}", real_vault_ata);
+msg!("Passed vault ATA: {}", ctx.accounts.vault_xon_ata.key());
 require_keys_eq!(
     ctx.accounts.vault_xon_ata.key(),
     real_vault_ata,
@@ -99,15 +102,17 @@ require_keys_eq!(
 );
         // --- SECURITY FIX 4: VERIFY REAL USER ATA ---
 let real_user_ata =
-    get_associated_token_address(
+    get_associated_token_address_with_program_id(
         &ctx.accounts.user.key(),
         &ctx.accounts.xon_mint.key(),
+        &TOKEN_2022_PROGRAM_ID,
     );
 
 require_keys_eq!(
     ctx.accounts.user_xon_ata.key(),
     real_user_ata,
     XonError::InvalidUserATA
+
 );
 
         // FIRST TAP automatically sets start time
