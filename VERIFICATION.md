@@ -1,26 +1,26 @@
-# ✅ Program Verification Statement
+# ✅ Program Verxification Statement
 
 **Program ID:** `D5Ssp6VDvrZ7u6ccmM8UHggoBr8PxkkGZvijo4HbmPyX`
 **Source Code:** https://github.com/imtheroute/X1-XON
-**Commit Hash:** `15af3c351201eface4378edb9dbed9ca01e6d88e`
-**Built Program Hash:** `6abc482af243ce04fea4dad06022d10cc2fa9342335565a3ae614fed870c2586`
-**On-chain Program Hash:** `6abc482af243ce04fea4dad06022d10cc2fa9342335565a3ae614fed870c2586`
+**Commit Hash:** `0471b5f9e814254ee5b9724bdb1e519899623a54`
+**Built Program Hash:** `dc31e4559d83857b3c88f3bc52a60530e77343a9891c015fb6b04a474243d5a8`
+**On-chain Program Hash:** `dc31e4559d83857b3c88f3bc52a60530e77343a9891c015fb6b04a474243d5a8`
 
 ## 🔍 Verification Details
 
 - **Verification Tool:** solana-verify
 - **Solana Version:** 2.3.0
 - **Build Method:** Deterministic Docker build
-- **Verification Date:** February 23, 2026
+- **Verification Date:** February 26, 2026
 - **Verifier:** @imtheroute (GitHub: https://github.com/imtheroute)
 
 ## ✅ Result
 
 **HASHES MATCH - Program is verified!**
 
-The on-chain program at `D5Ssp6VDvrZ7u6ccmM8UHggoBr8PxkkGZvijo4HbmPyX` 
+The on-chain program at `D5Ssp6VDvrZ7u6ccmM8UHggoBr8PxkkGZvijo4HbmPyX`
 was built from the source code at:
-https://github.com/imtheroute/X1-XON/tree/15af3c351201eface4378edb9dbed9ca01e6d88e
+https://github.com/imtheroute/X1-XON/tree/0471b5f9e814254ee5b9724bdb1e519899623a54
 
 ## 🔐 Commit Signature Verification
 
@@ -36,12 +36,6 @@ solana-verify verify-from-repo \
   --url https://rpc.mainnet.x1.xyz \
   --program-id D5Ssp6VDvrZ7u6ccmM8UHggoBr8PxkkGZvijo4HbmPyX \
   https://github.com/imtheroute/X1-XON \
-  --commit-hash 15af3c351201eface4378edb9dbed9ca01e6d88e \
+  --commit-hash 0471b5f9e814254ee5b9724bdb1e519899623a54 \
   --library-name project_x \
   --mount-path .
-
-# View the file
-cat VERIFICATION.md
-
-# Check file details
-ls -la VERIFICATION.md
